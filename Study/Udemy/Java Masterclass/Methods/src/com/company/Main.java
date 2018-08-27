@@ -37,19 +37,22 @@ public class Main
         // a score of 1500, 900, 400 and 50
         //
 
-        String playerName = "Buddy";
-        int playerScore = 1000;
 
-        displayHighScorePosition(playerName, calculatedHighScorePosition(playerScore));
+        displayHighScorePosition("Mira", calculatedHighScorePosition(1500));
 
-        playerScore = 500;
-        displayHighScorePosition(playerName, calculatedHighScorePosition(playerScore));
+        displayHighScorePosition("Ëlmira", calculatedHighScorePosition(900));
 
-        playerScore = 100;
-        displayHighScorePosition(playerName, calculatedHighScorePosition(playerScore));
+        displayHighScorePosition("Dair", calculatedHighScorePosition(400));
 
-        playerScore = 50;
-        displayHighScorePosition(playerName, calculatedHighScorePosition(playerScore));
+        displayHighScorePosition("Buddy", calculatedHighScorePosition(50));
+
+        displayHighScorePosition("Ryuken", calculatedHighScorePosition(1000));
+
+        displayHighScorePosition("Saar", calculatedHighScorePosition(500));
+
+        displayHighScorePosition("Danny", calculatedHighScorePosition(100));
+
+        displayHighScorePosition("Chris", calculatedHighScorePosition(25));
 
 
     }
@@ -63,24 +66,13 @@ public class Main
     public static int calculatedHighScorePosition(int playerScore)
     {
         if (playerScore >=1000)
-        {
-            int playerRank = 1;
-            return playerRank;
-        }
-        else if (playerScore >= 500 && playerScore < 1000)
-        {
-            int playerRank = 2;
-            return playerRank;
-        }
-        else if (playerScore >= 100 && playerScore < 500)
-        {
-            int playerRank = 3;
-            return playerRank;
-        } else
-        {
-            int playerRank = 4;
-            return playerRank;
-        }
+            return 1;
+        else if (playerScore >= 500 )
+            return 2;
+        else if (playerScore >= 100 )
+            return 3;
+        else
+            return 4;
     }
 
     public static int calculatedScore(boolean gameOver, int score, int levelCompleted, int bonus)
