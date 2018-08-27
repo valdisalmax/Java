@@ -26,7 +26,7 @@ public class Main
         // position they got and a further message " on the high score table".
         //
         // Create a 2nd method called calculatedHighScorePosition
-        // it should be sent one arguent onlye, the player score
+        // it should be sent one arguemnt only, the player score
         // it should return an int
         // the return data should be
         // 1. if the score is > 1000
