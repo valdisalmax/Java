@@ -34,18 +34,20 @@ public class Main
         // use the link I give you to confirm your code is calculating correctly.
         // Calling another overloaded method just requires you to use the
         // right number of parameters.
-        calcFeetAndInchesToCentimeters(6,0);
-        calcFeetAndInchesToCentimeters(7,5);
-        calcFeetAndInchesToCentimeters(-10,1);
-        calcFeetAndInchesToCentimeters(0,1);
-        calcFeetAndInchesToCentimeters(6,-10);
-        calcFeetAndInchesToCentimeters(6,-13);
+        calcFeetAndInchesToCentimeters(6, 0);
+        calcFeetAndInchesToCentimeters(7, 5);
+        calcFeetAndInchesToCentimeters(-10, 1);
+        calcFeetAndInchesToCentimeters(0, 1);
+        calcFeetAndInchesToCentimeters(6, -10);
+        calcFeetAndInchesToCentimeters(6, -13);
         calcFeetAndInchesToCentimeters(100);
+        calcFeetAndInchesToCentimeters(175);
+        calcFeetAndInchesToCentimeters(-10);
     }
 
     public static double calcFeetAndInchesToCentimeters(double feet, double inches)
     {
-        if((feet < 0) || ((inches < 0) || (inches > 12)))
+        if ((feet < 0) || ((inches < 0) || (inches > 12)))
         {
             System.out.println("Invalid feet or inches parameters");
             return -1;
@@ -59,8 +61,9 @@ public class Main
 
     public static double calcFeetAndInchesToCentimeters(double inches)
     {
-        if(inches < 0)
+        if (inches < 0)
         {
+            System.out.println("Invalid feet or inches parameters");
             return -1;
         }
         double feet = (int) inches / 12;
@@ -86,6 +89,4 @@ public class Main
         System.out.println("No player name, no player score.");
         return 0;
     }
-
-
 }
