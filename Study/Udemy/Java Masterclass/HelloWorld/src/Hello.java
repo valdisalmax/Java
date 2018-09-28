@@ -6,7 +6,7 @@ public class Hello {
         int myTotal = myFirstNumber + mySecondNumber + myThirdNumber;
         int myNewTotal = 1000 - myTotal;
 
-        System.out.println("Hello World!");
+        System.out.println("Hello World! Buddy");
         System.out.println(myTotal);
         System.out.println(myNewTotal);
     }
