@@ -16,7 +16,7 @@ public class Main {
                 System.out.println(count + 1 + ". Number " + i + " can be divided by 3 and 5");
                 sum += i;
                 count++;
-                if (count == 5) {
+                if (count == 25) {
                     break;
                 }
             }
